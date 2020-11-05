@@ -1,0 +1,24 @@
+{
+    "name": "lyue/laravel-model",
+    "description": "laravel model helper",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lyue\\LaravelModel\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linyue",
+            "email": "769353695@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lyue\\LaravelModel\\ServiceProvider"
+            ]
+        }
+    }
+}
