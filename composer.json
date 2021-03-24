@@ -1,7 +1,9 @@
 {
     "name": "lyue/laravel-model",
     "description": "laravel model helper",
-    "require": {},
+    "require": {
+        "laravel/framework": "5.*"
+    },
     "autoload": {
         "psr-4": {
             "Lyue\\LaravelModel\\": "src/"
