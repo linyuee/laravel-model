@@ -2,7 +2,7 @@
     "name": "lyue/laravel-model",
     "description": "laravel model helper",
     "require": {
-        "laravel/framework": "~6.0"
+        "laravel/framework": ">5.5*"
     },
     "autoload": {
         "psr-4": {
