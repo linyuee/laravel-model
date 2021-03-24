@@ -48,7 +48,7 @@ class UpdateModels extends Command
         $template_method = file_get_contents(dirname(__FILE__) . '/../stubs/model_method.stub');
 
         foreach ($tables as $key => $v) {
-            $class_name = studly_case($v) . 'Model';
+            $class_name = convertUnderline($v);
             $file_name = $class_name . '.php';
             $file_path = $model_path . '/' . $file_name;
 

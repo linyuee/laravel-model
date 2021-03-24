@@ -47,11 +47,9 @@ class CreateModels extends Command
         //model文件目录
         $model_path = app_path() . '/Models';
 
-        //加载helper
-
 
         foreach ($tables as $key => $v) {
-            $class_name = studly_case($v) . 'Model';
+            $class_name = convertUnderline($v);
             $file_name = $class_name . '.php';
             $file_path = $model_path . '/' . $file_name;
 

@@ -2,12 +2,13 @@
     "name": "lyue/laravel-model",
     "description": "laravel model helper",
     "require": {
-        "laravel/framework": "5.*"
+        "laravel/framework": "^6.0"
     },
     "autoload": {
         "psr-4": {
             "Lyue\\LaravelModel\\": "src/"
-        }
+        },
+        "files": ["src/helper.php"]
     },
     "license": "MIT",
     "authors": [
