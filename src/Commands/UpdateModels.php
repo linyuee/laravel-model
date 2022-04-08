@@ -41,7 +41,7 @@ class UpdateModels extends Command
         $tables = array_map('reset', \DB::select('SHOW TABLES'));
 
         //model文件目录
-        $model_path = app_path() . '/Models';
+        $model_path = app('path') . '/Models';
 
 
         //加载模板
