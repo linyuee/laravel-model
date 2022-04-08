@@ -45,14 +45,12 @@ class CreateModels extends Command
         $template_method = file_get_contents(dirname(__FILE__) . '/../stubs/model_method.stub');
 
         //model文件目录
-        $model_path = app_path() . '/Models';
-
+        $model_path = app('path') . '/Models';
 
         foreach ($tables as $key => $v) {
             $class_name = convertUnderline($v);
             $file_name = $class_name . '.php';
             $file_path = $model_path . '/' . $file_name;
-
             //判断文件是否存在,存在则跳过
             if (file_exists($file_path)) {
                 continue;
